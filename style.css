@@ -150,6 +150,16 @@ nav ul li{
     margin-left: 100px;
     margin-top: 64px;
 }
+.volume-control{
+    position: absolute;
+    left: 84vw;
+    top: 62px;
+}
+#volumeControl {
+    width: 100px; /* Adjust width to desired size */
+    transform: rotate(270deg); /* Rotate for proper orientation */
+    appearance: none; /* Remove default styling */
+}
 
 .fas, .far {
     cursor: pointer;
