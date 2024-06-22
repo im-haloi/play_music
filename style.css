@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gwendolyn:wght@400;700&display=swap');
+body{
+    background-color: lightblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    font-family: 'Gwendolyn', cursive;
+}
+
+nav ul{
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: whitesmoke;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 45px;
+    padding: 0 6px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.container{
+    font-family: 'Gwendolyn', cursive;
+    color: rgb(98, 0, 255);
+    min-height: 77vh;
+    width: 80vw;
+    padding: 20px;
+    margin: 23px auto;
+    display: flex;
+    background-color: yellowgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    background-image: url('logo.png');
+}
+
+
+#previous{
+    padding-right: 10px;
+}
+#next{
+    padding-left: 10px;
+}
+
+
+.songItem{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    background-color: white ;
+    width: 50vw;
+    margin: 24px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+}
+.songItemPlay{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#masterPlay{
+    margin: 15px;
+    cursor: pointer;
+}
+.songItem img{
+    margin-left: 15px;
+    height: 49px;
+    border-radius: 20px;
+}
+.songInfo{
+    position: absolute;
+    left :10vw;
+    padding-top: 19px;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom {
+    margin: 23px auto;
+    position: sticky;
+    width: 90%;
+    background-color: #aded0c;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px;
+}
+#gif {
+    height: 40px;
+    margin-right: 23px;
+}
+
+#myProgressBar {
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.time_left {
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+}
+
+.icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.songInfo {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.songBanner img{
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 64px;
+}
+
+.fas, .far {
+    cursor: pointer;
+}
+
+.fas:active, .far:active {
+    transform: scale(1.1);
+}
