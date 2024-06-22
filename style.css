@@ -112,6 +112,7 @@ nav ul li{
     margin-bottom: 10px;
 }
 #gif {
+    opacity: 0;
     height: 40px;
     margin-right: 23px;
 }
