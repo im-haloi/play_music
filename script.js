@@ -8,7 +8,7 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let timestamps = Array.from(document.getElementsByClassName('timestamp'));
-
+let volumeControl = document.getElementById('volumeControl');
 let songs = [
     {songName: "Meri Khamoshi Hai", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
     {songName: "Namami Shamishan", filePath: "songs/2.mp3", coverPath: "covers/2.png"},
@@ -38,6 +38,10 @@ const fetchSongDuration = (song, callback) => {
         callback(tempAudio.duration);
     });
 };
+
+volumeControl.addEventListener('input', () => {
+    audioElement.volume = volumeControl.value / 100;
+});
 
 // Update each song item with the cover, name, and duration
 songItems.forEach((element, i) => { 
