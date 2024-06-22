@@ -156,6 +156,7 @@ nav ul li{
     top: 62px;
 }
 #volumeControl {
+    cursor: pointer;
     width: 100px; /* Adjust width to desired size */
     transform: rotate(270deg); /* Rotate for proper orientation */
     appearance: none; /* Remove default styling */
